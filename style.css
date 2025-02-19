@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    text-align: center;
 
     font-family: "Roboto Flex", serif;
     margin: 0px;
@@ -17,15 +18,17 @@ body {
 .top.box {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #2b0042;
     color: #F9FAF8;
-    padding: 16px 30% 48px;
+    padding: 16px 20% 48px;
 }
 
 .header {
     display: flex;
+    min-width: 100%;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     margin-bottom: 24px;
 }
 
@@ -52,7 +55,8 @@ a {
     display: flex;
     gap: 48px;
     align-items:center;
-    justify-content: space-between;
+    justify-content: center;
+    max-width: 800px;
 
     padding: 32px 0px;
 }
@@ -132,12 +136,21 @@ button.hero {
     border-radius: 8px;
 }
 
+
+
 .quote-box {
     
     background-color: rgb(235, 235, 235);
+    justify-content: center;
     padding: 48px 30% 48px;
-    display: block;
+    display: flex;
     
+}
+
+.quote-container {
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote {
